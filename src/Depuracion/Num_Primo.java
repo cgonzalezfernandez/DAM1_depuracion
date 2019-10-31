@@ -23,27 +23,27 @@ public class Num_Primo {
 		// TODO Auto-generated method stub
 			
 			Scanner entradaEscaner = new Scanner (System.in); //Creación de un objeto Scanner
-			 int num = entradaEscaner.nextInt(); //Invocamos
-		return num;
+			int num = entradaEscaner.nextInt(); //Invocamos
+		    return num;
 	}
 
 
 		public static boolean comprobar_primo(int num) {
 			
 			int[] divisores =new int[15];
-			boolean primo = true; 
+			boolean primoB = true; 
 			int posicion=0;
 			
 			for(int i = 2; i <num; i++) {
 				if (num % i == 0) {
-					primo = false;
+					primoB = false;
 					//Vamos guardando los divisores en un array
 					divisores[posicion]=i;
 					posicion++;
 					//break;
 				}
 			}
-			if (primo) {
+			if (primoB) {
 				System.out.print("El número es primo \n");
 			}else {
 				System.out.print("El número no es primo \n");
@@ -53,7 +53,7 @@ public class Num_Primo {
 				
 				System.out.printf(divisores[i]+"\n");
 			}
-			return primo;
+			return primoB;
 		}
 			
 		
