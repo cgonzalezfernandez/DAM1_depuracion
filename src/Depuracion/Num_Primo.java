@@ -64,4 +64,5 @@ public class Num_Primo {
 			return num+15;
 		}
 
+		//Hola a los de primero de DAM, suerte con la asignatura
 }
