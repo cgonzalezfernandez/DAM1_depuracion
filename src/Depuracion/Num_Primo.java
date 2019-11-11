@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class Num_Primo {
 
 	public static void main(String[] args) {
+		saludar();
 		// TODO Auto-generated method stub
 		
 		System.out.print("Introduce un número para averiguar si es primo o no ");
@@ -55,7 +56,10 @@ public class Num_Primo {
 			}
 			return primoB;
 		}
-			
+		
+		public static void saludar() {
+			System.out.println("Holi bebes");
+		}
 		
 		
 		public static int suma(int num) {
