@@ -16,6 +16,8 @@ public class Num_Primo {
 		 
 		 int suma = suma(num);
 		 System.out.println("Se incrementa el número en 15 unidades"+ ":"+" "+ suma);
+	
+		 saludo("Hello");
 	}
 
 
@@ -62,6 +64,13 @@ public class Num_Primo {
 			// TODO Auto-generated method stub
 			
 			return num+15;
+		}
+		
+		public static String saludo(String saludar) {
+			
+			 saludar = "Buenos días Ceinmark";
+			 
+			 return saludar;
 		}
 		//Hola a los de primero de DAM, suerte con la asignatura---18:51
 }
