@@ -56,7 +56,10 @@ public class Num_Primo {
 			return primoB;
 		}
 			
-		
+		public static void holaMundo()
+		{
+			System.out.println("hola mundo");
+		}
 		
 		public static int suma(int num) {
 			// TODO Auto-generated method stub
