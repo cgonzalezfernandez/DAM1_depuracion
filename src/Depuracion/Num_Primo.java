@@ -13,6 +13,7 @@ public class Num_Primo {
 		int num = pedir_numero();
 		 
 		 comprobar_primo(num);
+		 mostrar();
 		 
 		 int suma = suma(num);
 		 System.out.println("Se incrementa el número en 15 unidades"+ ":"+" "+ suma);
@@ -64,4 +65,7 @@ public class Num_Primo {
 			return num+15;
 		}
 		//Hola a los de primero de DAM, suerte con la asignatura---18:51
+		public static void mostrar() {
+			System.out.println("hola,soy Ruben");
+		}
 }
