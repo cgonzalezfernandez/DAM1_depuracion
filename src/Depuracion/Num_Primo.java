@@ -7,7 +7,7 @@ public class Num_Primo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+		saludar();
 		System.out.print("Introduce un número para averiguar si es primo o no ");
 		 
 		int num = pedir_numero();
@@ -62,6 +62,11 @@ public class Num_Primo {
 			// TODO Auto-generated method stub
 			
 			return num+15;
+		}
+		public static void saludar() {
+			// TODO Auto-generated method stub
+			
+			System.out.println("Buenos dias Ceinmark soy Moroni");
 		}
 		//Hola a los de primero de DAM, suerte con la asignatura---18:51
 }
