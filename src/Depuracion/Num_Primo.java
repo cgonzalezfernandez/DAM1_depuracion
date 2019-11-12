@@ -67,6 +67,7 @@ public class Num_Primo {
 		//Hola a los de primero de DAM, suerte con la asignatura---18:51
 		
 		public static void saludar(){
-			System.out.println("Buenos días CeinMark, soy Aldama");
+			System.out.println("Buenos días, soy Aldama");
+			//hola
 		}
 }
