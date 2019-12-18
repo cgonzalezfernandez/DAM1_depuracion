@@ -1,6 +1,8 @@
 package test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -10,6 +12,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import Depuracion.Num_Primo;
+import junit.framework.TestCase;
 
 public class Num_PrimoTest {
 	Num_Primo prim;
@@ -24,7 +27,7 @@ public class Num_PrimoTest {
 	public void primos() {
 		
 		boolean primo = prim.comprobar_primo(11);
-//		Assert.assertTrue(primo);
+		//Assert.assertTrue(primo);
 		
 		
 	}
@@ -32,6 +35,7 @@ public class Num_PrimoTest {
 	public void pedir_numero() {
 		
 		prim.pedir_numero();
+		//Assert.assertTrue(true);
 		
 		
 	}
@@ -49,6 +53,13 @@ public class Num_PrimoTest {
 		
 		int s = prim.suma(20);
 		Assert.assertEquals(35, s);
+	}
+	
+	@Test
+	public void compararNombres() {
+		
+		Assert.assertTrue(prim.compararNombres());
+		
 	}
 		
 

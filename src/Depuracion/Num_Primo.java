@@ -71,4 +71,24 @@ public class Num_Primo {
 			
 			System.out.println("Buenos días Ceinmark, soy Carlos González");
 		}
+		
+		//Comparar cadenas de caracteres
+		
+		public static boolean compararNombres() {
+			
+			String miNombre = "Carlos";
+			boolean n = false;
+			System.out.print("Introduce un el nombre de la persona a comparar ");
+			Scanner entradaEscaner = new Scanner (System.in); //Creación de un objeto Scanner
+			String nameO = entradaEscaner.next(); //Invocamos
+			
+			if(nameO.equalsIgnoreCase(miNombre)) {
+				
+				n = true;
+				System.out.println("Los nombres son iguales");
+				
+			}
+			
+			return n;
+		}
 }
