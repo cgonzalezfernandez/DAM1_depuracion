@@ -32,6 +32,14 @@ public class Num_PrimoTest {
 		
 	}
 	@Test
+	public void primosNo() {
+		
+		boolean primo = prim.comprobar_primo(12);
+		//Assert.assertTrue(primo);
+		
+		
+	}
+	@Test
 	public void pedir_numero() {
 		
 		prim.pedir_numero();
