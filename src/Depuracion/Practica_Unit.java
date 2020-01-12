@@ -21,7 +21,8 @@ public class Practica_Unit {
 			
 		
 		// Tenéis que hacer un switch case con cuatro opciones. Para cada una de ellas haréis la suma,                                     
-	   //resta, multiplicación y división de dos números.
+	   //resta, multiplicación y división de dos números. Posteriormente, en clase haremos la clase de test para
+	//comprobar el correcto funcionamiento
 		public static void operaciones(int num1, int num2, char opcion) {
 			// TODO Auto-generated method stub
 			
@@ -41,21 +42,31 @@ public class Practica_Unit {
 		
 		//Comparar cadenas de caracteres
 		
-		public static void compararNombres(String nombre) {
+		public static boolean compararNombresPropios(String nombre, int valor) {
 			
 			String miNombre = "Carlos";
 //			System.out.print("Introduce un el nombre de la persona a comparar ");
 //			Scanner entradaEscaner = new Scanner (System.in); //Creación de un objeto Scanner
 //			String nameO = entradaEscaner.next(); //Invocamos
 			
-			if(nombre.equalsIgnoreCase(miNombre)) {
-				
-				System.out.println("Los nombres son iguales");
-				
+			//Si es par
+			if(valor %2 ==0) {
+			
+				if(nombre.equalsIgnoreCase(miNombre)) {
+					
+					System.out.println("Los nombres son iguales");
+					return true;
+					
+				}else {
+					//.....concatenad el valor pasado al string 'miNombre' con el mensaje "no es el buscado' y lo pintais
+					//método .concat()
+					System.out.println("Vuelve a probar otra vez, pues, no has acertado con el nombre");
+				}
 			}else {
 				
-				System.out.println("Vuelve a probar otra vez, pues, no has acertado con el nombre");
+				System.out.println("No habéis eleido un número par");
 			}
+			return false;
 			
 		}
 		
