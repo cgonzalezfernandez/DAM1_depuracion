@@ -9,11 +9,11 @@ public class Num_Primo {
 		// TODO Auto-generated method stub
 		
 		saludar();
-		System.out.print("Introduce un número para averiguar si es primo o no ");
+		System.out.print("Introduce un número para sumar 15 unidades ");
 		 
 		int num = pedir_numero();
-		 
-		 comprobar_primo(num);
+//		 
+//		 comprobar_primo(num);
 		 
 		 int suma = suma(num);
 		 System.out.println("Se incrementa el número en 15 unidades"+ ":"+" "+ suma);
@@ -61,8 +61,10 @@ public class Num_Primo {
 		
 		public static int suma(int num) {
 			// TODO Auto-generated method stub
+			int s = num+15;
 			
-			return num+15;
+			System.out.println("La suma será..." + s);
+			return s;
 		}
 		//Hola a los de primero de DAM, suerte con la asignatura---18:51
 		
@@ -74,9 +76,9 @@ public class Num_Primo {
 		
 		//Comparar cadenas de caracteres
 		
-		public static boolean compararNombres() {
+		public static boolean compararNombres(String miNombre) {
 			
-			String miNombre = "Carlos";
+			//String miNombre = "Carlos";
 			boolean n = false;
 			System.out.print("Introduce un el nombre de la persona a comparar ");
 			Scanner entradaEscaner = new Scanner (System.in); //Creación de un objeto Scanner
@@ -87,6 +89,10 @@ public class Num_Primo {
 				n = true;
 				System.out.println("Los nombres son iguales");
 				
+			}else {
+				
+				
+				System.out.println("Los nombre no coinciden");
 			}
 			
 			return n;

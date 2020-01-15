@@ -66,7 +66,14 @@ public class Num_PrimoTest {
 	@Test
 	public void compararNombres() {
 		
-		Assert.assertTrue(prim.compararNombres());
+		Assert.assertTrue(prim.compararNombres("Carlos"));
+		
+	}
+	
+	@Test
+	public void compararNombresNo() {
+		
+		Assert.assertFalse(prim.compararNombres("Carlos"));
 		
 	}
 		
