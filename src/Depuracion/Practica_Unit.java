@@ -9,31 +9,55 @@ public class Practica_Unit {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		Scanner entrada = new Scanner(System.in);
 		
+		int num1,num2;
+		int resultado = 0;
+		int opcion;
+		System.out.println("Introduce un número");
+			num1=entrada.nextInt();
+				System.out.println("Introduce otro número");
+					num2=entrada.nextInt();
+		
+					System.out.println("Introduce una opcion: \n"
+							+ "1 Suma \n"
+							+ "2 Resta \n"
+							+ "3 Multiplicación \n"
+							+ "4 División \n"
+							+ "5 Salir");
+		
+		opcion=entrada.nextInt();
 		 
-		
-	
+		switch (opcion) {
+			case 1:
+				resultado= num1+num2;
+				break;
+			case 2:
+				resultado= num1-num2;
+				break;
+			case 3:
+				resultado= num1*num2;
+				break;
+			case 4:
+				if (num2!=0) {
+					resultado= num1/num2;
+				}else {
+				System.out.println("ERROr");
+				}
+				break;
+			default: 
+				System.out.println("Opción no válida");
+		}
+		System.out.println("El resultado es " + resultado);
 	}
 
-
-		
-		
-			
-		
 		// Tenéis que hacer un switch case con cuatro opciones. Para cada una de ellas haréis la suma,                                     
 	   //resta, multiplicación y división de dos números. Posteriormente, en clase haremos la clase de test para
 	//comprobar el correcto funcionamiento
-		public static void operaciones(int num1, int num2, char opcion) {
+		public static void operaciones(int num1, int num2, int opcion) {
 			// TODO Auto-generated method stub
+	
 			
-			//switch (opcion) {
-//			case value:
-//				
-//				break;
-//
-//			default:
-//				break;
-//			}
 			
 		}
 		
