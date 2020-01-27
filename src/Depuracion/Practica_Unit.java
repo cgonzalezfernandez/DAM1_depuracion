@@ -8,16 +8,9 @@ import javax.print.DocFlavor.STRING;
 public class Practica_Unit {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-		 
-		
+		// TODO Auto-generated method stub				
 	
 	}
-
-
-		
-		
 			
 		
 		// Tenéis que hacer un switch case con cuatro opciones. Para cada una de ellas haréis la suma,                                     
@@ -26,18 +19,24 @@ public class Practica_Unit {
 		public static void operaciones(int num1, int num2, char opcion) {
 			// TODO Auto-generated method stub
 			
-			//switch (opcion) {
-//			case value:
-//				
-//				break;
-//
-//			default:
-//				break;
-//			}
+			switch (opcion) {
+			case ('1'):
+				System.out.println(num1 + num2);
+				break;
+				
+			case ('2'):
+				System.out.println(num1 - num2);
+				break;
+				
+			case ('3'):
+				System.out.println(num1 * num2);
+				break;
+				
+			default:
+				break;
+			}
 			
 		}
-		
-		
 		
 		
 		//Comparar cadenas de caracteres
