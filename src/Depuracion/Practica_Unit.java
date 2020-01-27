@@ -1,34 +1,48 @@
 package Depuracion;
 
-import java.util.ArrayList;
 import java.util.Scanner;
-
-import javax.print.DocFlavor.STRING;
 
 public class Practica_Unit {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner entrada = new Scanner(System.in);
-		
+	
+	
 		int num1,num2;
-		int resultado = 0;
 		int opcion;
-		System.out.println("Introduce un número");
-			num1=entrada.nextInt();
-				System.out.println("Introduce otro número");
-					num2=entrada.nextInt();
+	
+		do {	
+			System.out.println("Introduce una opcion: \n"
+					+ "1 Suma \n"
+					+ "2 Resta \n"
+					+ "3 Multiplicación \n"
+					+ "4 División \n"
+					+ "5 Salir");
+
+			opcion=entrada.nextInt();
+				if(opcion==5) {
+					System.out.println("De acuerdo, hasta luego");
+					break;
+				}
+			
+				System.out.println("Introduce un número");
+					num1=entrada.nextInt();
+						System.out.println("Introduce otro número");
+							num2=entrada.nextInt();
 		
-					System.out.println("Introduce una opcion: \n"
-							+ "1 Suma \n"
-							+ "2 Resta \n"
-							+ "3 Multiplicación \n"
-							+ "4 División \n"
-							+ "5 Salir");
-		
-		opcion=entrada.nextInt();
-		 
-		switch (opcion) {
+		operaciones(num1, num2, opcion);
+	
+		}while(opcion!=5);
+	}
+		// Tenéis que hacer un switch case con cuatro opciones. Para cada una de ellas haréis la suma,                                     
+	   //resta, multiplicación y división de dos números. Posteriormente, en clase haremos la clase de test para
+	//comprobar el correcto funcionamiento
+		public static void operaciones(int num1, int num2, int opcion) {
+			// TODO Auto-generated method stub
+			int resultado=0;
+			
+			switch (opcion) {
 			case 1:
 				resultado= num1+num2;
 				break;
@@ -44,25 +58,10 @@ public class Practica_Unit {
 				}else {
 				System.out.println("ERROr");
 				}
-				break;
-			default: 
-				System.out.println("Opción no válida");
+				break;	
+			}
+			System.out.println("El resultado es " + resultado);	
 		}
-		System.out.println("El resultado es " + resultado);
-	}
-
-		// Tenéis que hacer un switch case con cuatro opciones. Para cada una de ellas haréis la suma,                                     
-	   //resta, multiplicación y división de dos números. Posteriormente, en clase haremos la clase de test para
-	//comprobar el correcto funcionamiento
-		public static void operaciones(int num1, int num2, int opcion) {
-			// TODO Auto-generated method stub
-	
-			
-			
-		}
-		
-		
-		
 		
 		//Comparar cadenas de caracteres
 		
