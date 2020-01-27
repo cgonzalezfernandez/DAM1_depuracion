@@ -35,6 +35,33 @@ public class Practica_Unit {
 //				break;
 //			}
 			
+			switch(opcion) {
+			case '1':
+				System.out.println("la suma da "+(num1+num2));
+				break;
+			case '2':
+				if(num1>num2||num1==num2) {
+					System.out.println("la resta da "+(num1-num2));
+				}else {
+					System.out.println("la resta da "+(num2-num1));
+				}
+				break;
+			case '3':
+				System.out.println("la multiplicacion da "+(num1*num2));
+				break;
+			case '4':
+				if(num1!=0&&num2!=0) {
+					if(num1>num2||num1==num2) {
+						System.out.println("la division da "+(num1/num2));
+					}else {
+						System.out.println("la division da "+(num2/num1));
+					}
+				}else {
+					System.out.println("no se puede dividir entre 0");
+				}
+				
+			}
+			
 		}
 		
 		
