@@ -10,8 +10,28 @@ public class Practica_Unit {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
+		 Scanner entrada=new Scanner(System.in);
+		 int num1,num2;
+		 char opcion;
 		 
+		System.out.println("DAME LOS OPERANDOS:");
+		System.out.println("");
+		System.out.println("DAME UN NUMERO ENTERO (Operando1)");
+		num1=entrada.nextInt();
+		System.out.println("DAME UN NUMERO ENTERO (Operando2)");
+		num2=entrada.nextInt();
 		
+		System.out.println("LAS OPCIONES QUE PUEDES USAR SON:");
+		System.out.println("");
+		System.out.println("1. SUMA");
+		System.out.println("2. RESTA");
+		System.out.println("3. MULTIPLICACION");
+		System.out.println("4. DIVISIÓN");
+		System.out.println("");
+		System.out.println("¿QUE OPCION DESEAS ESCOGER?");
+		opcion=entrada.next().charAt(0);
+		
+		operaciones(num1,num2,opcion);
 	
 	}
 
@@ -26,14 +46,39 @@ public class Practica_Unit {
 		public static void operaciones(int num1, int num2, char opcion) {
 			// TODO Auto-generated method stub
 			
-			//switch (opcion) {
-//			case value:
-//				
-//				break;
-//
-//			default:
-//				break;
-//			}
+			switch (opcion) {
+			case '1' :
+				
+				System.out.println(" La suma es:  "+(num1+num2));
+				
+				break;
+				
+			case '2': 
+				System.out.println("La resta  es:  "+(num1-num2));
+				break;
+				
+			case '3' :
+				
+				System.out.println("La multiplicacion " +(num1*num2));
+					break;
+					
+			case '4':
+				
+				if (num2!=0) {
+					
+					System.out.println("La division es :"+(num1/num2));
+					
+				}else {
+					
+					System.out.println("NO SE PUEDE DIVIDIR ENTRE CERO");
+				}
+				
+					break;
+			default:
+				
+				System.out.println("OPCION INCORRECTA");
+		break;
+			}
 			
 		}
 		
