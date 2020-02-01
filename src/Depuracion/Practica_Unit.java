@@ -24,16 +24,24 @@ public class Practica_Unit {
 	   //resta, multiplicación y división de dos números. Posteriormente, en clase haremos la clase de test para
 	//comprobar el correcto funcionamiento
 		public static void operaciones(int num1, int num2, char opcion) {
-			// TODO Auto-generated method stub
 			
-			//switch (opcion) {
-//			case value:
-//				
-//				break;
-//
-//			default:
-//				break;
-//			}
+			switch (opcion) {
+			case 1:
+				System.out.println(" La suma es " +(num1+num2));
+				break;
+				
+			case 2:
+				System.out.println(" La resta es " +(num1-num2));
+			
+			case 3:
+				System.out.println(" La multiplicación es " +(num1*num2));
+				
+			case 4:
+				System.out.println(" La división es " +(num1/num2));
+
+			default:
+				break;
+			}
 			
 		}
 		
